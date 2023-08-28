@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> head}}
+
+<body>
+<div class="wrapper">
+  <div class="content">
+    {{> header}}
+
+    <main class="main-menu-container main-menu-max-width-1200">
+      <section class="content-menu" id="content-menu-without-design">
+        <script async charset="utf-8"
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad8c4d6988ff461855679a3599a78562dfb0c5902446e79ffbb16e7be60e7af03&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+                type="text/javascript"></script>
+      </section>
+
+      {{> navigation_menu}}
+
+      {{> dropdown}}
+    </main>
+  </div>
+
+  {{> footer}}
+</div>
+<script src="js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> head}}
+
+<body>
+<div class="wrapper">
+  <div class="content">
+    {{> header}}
+
+    <main class="main-menu-container main-menu-max-width-1200">
+      <section class="content-menu">
+        <span id="load-time">{{serverTime}}</span>
+        <div class="display-none-max-width-850">
+          <div id="timesheet1"></div>
+          <div id="timesheet2"></div>
+          <div id="timesheet3"></div>
+          <div id="timesheet4"></div>
+        </div>
+        <div class="display-block-max-width-850">
+          <h2 class="horizontal-text-align">Упс, ваш экран слишком маленький...</h2>
+          <p class="horizontal-text-align">
+            Чтобы увидеть весь контент страницы, пересядьте за чуть больший экран
+          </p>
+        </div>
+      </section>
+
+      {{> navigation_menu}}
+
+      {{> dropdown}}
+    </main>
+  </div>
+
+  {{> footer}}
+</div>
+
+<script>
+  new Timesheet("timesheet1", 2020, 2024,
+    [
+      ["09/2020", "05/2021", "Дискретка", "lorem"],
+      ["09/2020", "05/2021", "Алгосы", "ipsum"],
+      ["09/2020", "05/2021", "Линал", "dolor"],
+      ["09/2020", "12/2021", "Матан", "default"],
+      ["09/2020", "12/2020", "ЦК", "sit"],
+      ["09/2020", "05/2022", "Английский", "lorem"],
+      ["09/2020", "05/2021", "Прога", "ipsum"],
+      ["09/2020", "05/2024", "Физра", "dolor"],
+      ["09/2020", "12/2020", "ЭВМ", "default"],
+      ["02/2021", "05/2022", "Физика", "sit"]
+    ]);
+  new Timesheet("timesheet2", 2021, 2021,
+    [
+      ["09/2021", "12/2021", "Оси", "lorem"],
+      ["09/2021", "12/2021", "Теорвер", "ipsum"],
+      ["09/2021", "12/2021", "ООП", "dolor"],
+      ["09/2021", "12/2021", "История", "default"],
+      ["09/2021", "12/2021", "БЖД", "sit"],
+      ["09/2021", "12/2021", "ОГНП", "lorem"]
+    ]);
+  new Timesheet("timesheet3", 2021, 2022,
+    [
+      ["02/2021", "12/2022", "Примат", "ipsum"],
+      ["02/2022", "05/2022", "Элтех", "dolor"],
+      ["02/2022", "05/2022", "БД", "default"],
+      ["02/2022", "05/2022", "Матстат", "sit"],
+      ["02/2022", "05/2022", "Java", "lorem"]
+    ]);
+  new Timesheet("timesheet4", 2022, 2023,
+    [
+      ["09/2022", "12/2022", "ML", "ipsum"],
+      ["09/2022", "05/2023", "Английский в проф деятельности", "dolor"],
+      ["09/2022", "12/2022", "Администрирование OC Windows Server", "default"],
+      ["09/2022", "12/2022", "Графика", "sit"],
+      ["09/2022", "05/2023", "Web", "lorem"]
+    ]);
+</script>
+</body>
+</html>

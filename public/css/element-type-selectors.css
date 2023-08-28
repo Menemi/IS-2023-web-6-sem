@@ -1,0 +1,158 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 0 30px;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: "Dodo Rounded", sans-serif;
+    background-image: url("https://i.ytimg.com/vi/5wZmLC6L5Ps/maxresdefault.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Dodo Rounded", serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h1 a {
+    font-family: "Dodo Rounded", serif;
+    color: #ffffff;
+    text-decoration-line: none;
+    line-height: normal;
+}
+
+a {
+    color: #0099ef;
+    text-decoration-line: underline;
+}
+
+footer {
+    margin-top: 30px;
+    color: #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+    padding-top: 10px;
+}
+
+aside {
+    margin: 20px 0;
+    color: #c4c4c4;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figure img {
+    vertical-align: middle;
+    border: 8px solid rgb(202, 224, 248);
+}
+
+figcaption {
+    width: 502px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(202, 224, 248);
+}
+
+del {
+    color: #ff4400;
+    text-decoration: none;
+}
+
+ins {
+    color: rgb(105, 178, 83);
+    text-decoration: none;
+}
+
+code {
+    background-color: #fafaff;
+    border: 1px solid #c6c4f4;
+    border-radius: 1%;
+    color: #3632ad;
+    font-family: "Courier New", "Courier", monospace;
+}
+
+pre {
+    padding: 5px;
+}
+
+blockquote p {
+    text-transform: capitalize;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+nav,
+aside {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+
+nav ul,
+aside ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li,
+aside ul li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+
+nav ul li a,
+aside ul li a {
+    border-radius: 20px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+}
+
+nav ul li a:hover,
+aside ul li a:hover {
+    background-color: #0A1F32;
+    font-weight: normal;
+}
+
+a:hover {
+    font-weight: bold;
+}

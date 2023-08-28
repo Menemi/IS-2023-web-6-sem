@@ -1,0 +1,47 @@
+{
+  "name": "timesheet.js",
+  "homepage": "https://sbstjn.github.io/timesheet.js/",
+  "authors": [
+    "sbstjn <mail@sbstjn.com>"
+  ],
+  "description": "With Timesheet.js you can easily create simple time and data sheets or timelines using HTML5, JavaScript and CSS3. Yep, it's a Vanilla JS library!",
+  "main": [
+    "dist/timesheet.min.js",
+    "dist/timesheet.min.css"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "timeline",
+    "timesheet",
+    "timebar",
+    "line",
+    "bar",
+    "graph",
+    "visualize",
+    "chart"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "screen.png",
+    "source",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "_release": "1354b05750",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "1354b057500dafa02dc17b0bc95ae4c77cf925f4"
+  },
+  "_source": "https://github.com/sbstjn/timesheet.js.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/sbstjn/timesheet.js.git",
+  "_direct": true
+}

@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int        @id @default(autoincrement())
+  email     String     @unique
+  name      String
+  isAdmin   Boolean    @default(false)
+  password  String
+  posts     Post[]
+  feedbacks Feedback[]
+  comments  Comment[]
+  monkes    Monke[]
+}
+
+model Monke {
+  id      Int     @id @default(autoincrement())
+  name    String
+  weight  Float
+  height  Float
+  color   Color
+  gender  Boolean
+  owner   User    @relation(fields: [ownerId], references: [id])
+  ownerId Int
+}
+
+model Post {
+  id          Int       @id @default(autoincrement())
+  title       String
+  content     String
+  isPublished Boolean   @default(false)
+  comments    Comment[]
+  author      User      @relation(fields: [authorId], references: [id])
+  authorId    Int
+}
+
+model Comment {
+  id       Int    @id @default(autoincrement())
+  content  String
+  post     Post   @relation(fields: [postId], references: [id])
+  postId   Int
+  author   User   @relation(fields: [authorId], references: [id])
+  authorId Int
+}
+
+model Feedback {
+  id       Int    @id @default(autoincrement())
+  content  String
+  rating   Int    @db.SmallInt()
+  author   User   @relation(fields: [authorId], references: [id])
+  authorId Int
+}
+
+enum Color {
+  BLACK
+  WHITE
+  RED
+}

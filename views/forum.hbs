@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> head}}
+
+<body>
+<div class="wrapper">
+  <div class="content">
+    {{> header}}
+
+    <main class="main-menu-container main-menu-max-width-1200">
+      <aside class="topic-menu">
+        <ul>
+          <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 1</a></li>
+          <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 2</a></li>
+          <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 3</a></li>
+          <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 4</a></li>
+          <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 5</a></li>
+        </ul>
+      </aside>
+
+      <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction2()">Темы</button>
+        <aside class="dropdown-content" id="myDropdown2">
+          <ul>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 1</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 2</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 3</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 4</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ">Topic 5</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <section class="forum-menu">
+        <span id="load-time">{{serverTime}}</span>
+        <p>Тут типа сообщения пользователей на форуме</p>
+      </section>
+
+      {{> navigation_menu}}
+
+      {{> dropdown}}
+    </main>
+  </div>
+
+  {{> footer}}
+</div>
+<script src="js/navigation.js"></script>
+</body>
+</html>

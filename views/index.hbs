@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+{{> head}}
+
+<body>
+<div class="wrapper">
+  <div class="content">
+    {{> header}}
+
+    <main class="main-menu-container main-menu-max-width-1200">
+      <section class="content-menu">
+        <span id="load-time">{{serverTime}}</span>
+        <p>Тут типа меню с контентом</p>
+        <ul>
+          <li><a class="white-text" href="first-lab">Первая лаба</a></li>
+          <li><a class="white-text" href="second-lab">Вторая лаба</a></li>
+          <li><a class="white-text" href="third-lab">Третья лаба</a></li>
+        </ul>
+      </section>
+
+      {{> navigation_menu}}
+
+      {{> dropdown}}
+    </main>
+  </div>
+
+  {{> footer}}
+</div>
+<script src="js/navigation.js"></script>
+</body>
+</html>
