@@ -4,13 +4,19 @@
 
 [Титов Даниил Ярославович](https://t.me/Menemi), [M33041](https://m33041.notion.site/M33041-784ae713119e4d208d42bd32e8ff6e7b)
 
+## Оригинал
+
+[Link to origin repository](https://github.com/is-web-y24/IS-2023-web-6-sem)
+
+[Website link \[inactive\]](https://menemi-web-6-sem.onrender.com/index)
+
 ## Макет главной страницы проекта
 
-![Макет](https://github.com/is-web-y24/IS-2023-web-6-sem/blob/main/public/pictures/layout.png)
+![Макет](https://github.com/Menemi/IS-2022-web-6-sem/blob/master/public/pictures/layout.png)
 
 ## Lab2
 
-![Diagram](https://github.com/is-web-y24/IS-2023-web-6-sem/blob/dev/makakino_diagram_120323.svg)
+![Diagram](https://github.com/Menemi/IS-2022-web-6-sem/blob/master/makakino_diagram_120323.svg)
 
 ### Модель `User`
 
