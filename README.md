@@ -12,11 +12,11 @@
 
 ## Макет главной страницы проекта
 
-![Макет](https://github.com/Menemi/IS-2022-web-6-sem/blob/master/public/pictures/layout.png)
+![Макет](https://github.com/Menemi/IS-2023-web-6-sem/blob/master/public/pictures/layout.png)
 
 ## Lab2
 
-![Diagram](https://github.com/Menemi/IS-2022-web-6-sem/blob/master/makakino_diagram_120323.svg)
+![Diagram](https://github.com/Menemi/IS-2023-web-6-sem/blob/master/makakino_diagram_120323.svg)
 
 ### Модель `User`
 
